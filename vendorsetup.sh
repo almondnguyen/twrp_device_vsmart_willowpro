@@ -72,6 +72,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
    	export OF_MAINTAINER=Long266
 	export TARGET_DEVICE_ALT="willowpro"
     export FOX_VERSION=R11.1
+	export OF_MAINTAINER_AVATAR="long266_avatar.png"
    	export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
 
     #export FOX_ADVANCED_SECURITY=1
