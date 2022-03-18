@@ -16,8 +16,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := $(call my-dir)
-
 ifeq ($(TARGET_DEVICE), willowpro)
+LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

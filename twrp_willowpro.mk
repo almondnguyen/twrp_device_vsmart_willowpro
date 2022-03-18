@@ -16,12 +16,10 @@
 # limitations under the License.
 #
 
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
 # Inherit from common AOSP config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Inherit from lancelot device
+# Inherit from device-specific configuration
 $(call inherit-product, device/vsmart/willowpro/device.mk)
 
 # Inherit some common TWRP stuff.
@@ -29,13 +27,8 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := willowpro
-PRODUCT_NAME := omni_willowpro
+PRODUCT_NAME := twrp_willowpro
 PRODUCT_BRAND := vsmart
 PRODUCT_MODEL := Star 4
 PRODUCT_MANUFACTURER := vsmart
 PRODUCT_RELEASE_NAME := Star 4
-
-# Fastbootd
-PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.0-impl-mock \
-    android.hardware.fastboot@1.0-impl-mock.recovery
